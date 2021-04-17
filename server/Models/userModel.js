@@ -6,9 +6,9 @@ const userSchema = new Schema({
     Email: String,
     Street: String,
     City: String,
-    Zipcode: Number,
+    Zipcode: Number,    
     Tasks: [{title: String, completed: Boolean}],
     Posts: [{title: String, body: String}]
 });
 
-module.exports = mongoose.model('Users', userSchema);
+module.exports = mongoose.model('users', userSchema);
